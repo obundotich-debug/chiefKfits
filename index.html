@@ -1,0 +1,451 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>chiefKfits</title>
+
+  <style>
+    *{
+      margin:0;
+      padding:0;
+      box-sizing:border-box;
+      font-family: Arial, Helvetica, sans-serif;
+    }
+
+    body{
+      background:#0d0d0d;
+      color:white;
+    }
+
+    header{
+      background:linear-gradient(to right,#000,#1a1a1a,#333);
+      padding:30px;
+      text-align:center;
+      box-shadow:0 4px 10px rgba(0,0,0,0.5);
+    }
+
+    header h1{
+      font-size:4rem;
+      color:gold;
+      letter-spacing:3px;
+    }
+
+    header p{
+      margin-top:10px;
+      color:#ccc;
+      font-size:1.2rem;
+    }
+
+    nav{
+      display:flex;
+      justify-content:center;
+      flex-wrap:wrap;
+      background:#111;
+      padding:15px;
+      position:sticky;
+      top:0;
+      z-index:1000;
+    }
+
+    nav a{
+      color:white;
+      text-decoration:none;
+      margin:10px;
+      padding:12px 18px;
+      border-radius:8px;
+      background:#222;
+      transition:0.3s;
+      font-weight:bold;
+    }
+
+    nav a:hover{
+      background:gold;
+      color:black;
+      transform:scale(1.05);
+    }
+
+    section{
+      padding:50px 40px;
+    }
+
+    section h2{
+      font-size:2.5rem;
+      margin-bottom:30px;
+      color:gold;
+      text-align:center;
+    }
+
+    .products{
+      display:grid;
+      grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
+      gap:25px;
+    }
+
+    .card{
+      background:#1a1a1a;
+      border-radius:15px;
+      overflow:hidden;
+      transition:0.3s;
+      box-shadow:0 4px 12px rgba(0,0,0,0.4);
+    }
+
+    .card:hover{
+      transform:translateY(-10px);
+    }
+
+    .card img{
+      width:100%;
+      height:300px;
+      object-fit:cover;
+    }
+
+    .card-content{
+      padding:20px;
+    }
+
+    .card-content h3{
+      margin-bottom:10px;
+      color:white;
+    }
+
+    .price{
+      color:gold;
+      font-size:1.2rem;
+      font-weight:bold;
+      margin-top:10px;
+    }
+
+    footer{
+      background:#000;
+      padding:40px;
+      text-align:center;
+      margin-top:50px;
+      border-top:2px solid gold;
+    }
+
+    footer h3{
+      color:gold;
+      margin-bottom:15px;
+    }
+
+    footer p{
+      margin:8px;
+      color:#ccc;
+    }
+
+    .hero{
+      height:80vh;
+      background-image:url('https://images.unsplash.com/photo-1490481651871-ab68de25d43d');
+      background-size:cover;
+      background-position:center;
+      display:flex;
+      justify-content:center;
+      align-items:center;
+      flex-direction:column;
+      text-align:center;
+    }
+
+    .hero h2{
+      font-size:4rem;
+      background:rgba(0,0,0,0.6);
+      padding:20px;
+      border-radius:10px;
+    }
+
+    .hero p{
+      margin-top:20px;
+      font-size:1.5rem;
+      background:rgba(0,0,0,0.6);
+      padding:10px 20px;
+      border-radius:10px;
+    }
+
+  </style>
+</head>
+
+<body>
+
+  <header>
+    <h1>chiefKfits</h1>
+    <p>Luxury Streetwear & Fashion Store</p>
+  </header>
+
+  <div class="hero">
+    <h2>DRIP • STYLE • CULTURE</h2>
+    <p>Explore Global Fashion Brands</p>
+  </div>
+
+  <nav>
+    <a href="#shirts">SHIRTS</a>
+    <a href="#tshirts">T-SHIRTS</a>
+    <a href="#trousers">TROUSERS</a>
+    <a href="#footwear">FOOTWEARS</a>
+    <a href="#headwear">HEADWEARS</a>
+    <a href="#sweaters">SWEATERS</a>
+    <a href="#jackets">JACKETS</a>
+    <a href="#jewellery">JEWELLERY</a>
+  </nav>
+
+  <!-- SHIRTS -->
+  <section id="shirts">
+    <h2>SHIRTS</h2>
+
+    <div class="products">
+
+      <div class="card">
+        <img src="https://images.unsplash.com/photo-1602810318383-e386cc2a3ccf">
+        <div class="card-content">
+          <h3>Nike Casual Shirt</h3>
+          <p>Premium Cotton Shirt</p>
+          <div class="price">Ksh. 1,300</div>
+        </div>
+      </div>
+
+      <div class="card">
+        <img src="https://images.unsplash.com/photo-1521572163474-6864f9cf17ab">
+        <div class="card-content">
+          <h3>Zara Official Shirt</h3>
+          <p>Luxury Slim Fit</p>
+          <div class="price">Ksh. 1,700</div>
+        </div>
+      </div>
+
+      <div class="card">
+        <img src="https://images.unsplash.com/photo-1596755094514-f87e34085b2c">
+        <div class="card-content">
+          <h3>Gucci Designer Shirt</h3>
+          <p>Imported Fabric</p>
+          <div class="price">Ksh. 2,000</div>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- TSHIRTS -->
+  <section id="tshirts">
+    <h2>T-SHIRTS</h2>
+
+    <div class="products">
+
+      <div class="card">
+        <img src="https://images.unsplash.com/photo-1576566588028-4147f3842f27">
+        <div class="card-content">
+          <h3>Adidas Tee</h3>
+          <div class="price">Ksh. 1,500</div>
+        </div>
+      </div>
+
+      <div class="card">
+        <img src="https://images.unsplash.com/photo-1503341504253-dff4815485f1">
+        <div class="card-content">
+          <h3>Chrome Hearts Tee</h3>
+          <div class="price">Ksh. 2,300</div>
+        </div>
+      </div>
+
+      <div class="card">
+        <img src="https://images.unsplash.com/photo-1512436991641-6745cdb1723f">
+        <div class="card-content">
+          <h3>Balenciaga Oversized Tee</h3>
+          <div class="price">Ksh. 2,500</div>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- TROUSERS -->
+  <section id="trousers">
+    <h2>TROUSERS</h2>
+
+    <div class="products">
+
+      <div class="card">
+        <img src="https://images.unsplash.com/photo-1542272604-787c3835535d">
+        <div class="card-content">
+          <h3>Rugged Jeans</h3>
+          <div class="price">Ksh. 2,000</div>
+        </div>
+      </div>
+
+      <div class="card">
+        <img src="https://images.unsplash.com/photo-1473966968600-fa801b869a1a">
+        <div class="card-content">
+          <h3>Khaki Official Trouser</h3>
+          <div class="price">Ksh. 2,500</div>
+        </div>
+      </div>
+
+      <div class="card">
+        <img src="https://images.unsplash.com/photo-1506629905607-d9d2db8b2e20">
+        <div class="card-content">
+          <h3>Nike Sweatpants</h3>
+          <div class="price">Ksh. 3,000</div>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- FOOTWEAR -->
+  <section id="footwear">
+    <h2>FOOTWEARS</h2>
+
+    <div class="products">
+
+      <div class="card">
+        <img src="https://images.unsplash.com/photo-1542291026-7eec264c27ff">
+        <div class="card-content">
+          <h3>Nike Air Force</h3>
+          <div class="price">Ksh. 5,500</div>
+        </div>
+      </div>
+
+      <div class="card">
+        <img src="https://images.unsplash.com/photo-1525966222134-fcfa99b8ae77">
+        <div class="card-content">
+          <h3>Adidas Sneakers</h3>
+          <div class="price">Ksh. 6,000</div>
+        </div>
+      </div>
+
+      <div class="card">
+        <img src="https://images.unsplash.com/photo-1514996937319-344454492b37">
+        <div class="card-content">
+          <h3>Luxury Socks</h3>
+          <div class="price">Ksh. 500</div>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- HEADWEAR -->
+  <section id="headwear">
+    <h2>HEADWEARS</h2>
+
+    <div class="products">
+
+      <div class="card">
+        <img src="https://images.unsplash.com/photo-1521369909029-2afed882baee">
+        <div class="card-content">
+          <h3>Beanie</h3>
+          <div class="price">Ksh. 800</div>
+        </div>
+      </div>
+
+      <div class="card">
+        <img src="https://images.unsplash.com/photo-1515886657613-9f3515b0c78f">
+        <div class="card-content">
+          <h3>Designer Cap</h3>
+          <div class="price">Ksh. 1,500</div>
+        </div>
+      </div>
+
+      <div class="card">
+        <img src="https://images.unsplash.com/photo-1507679799987-c73779587ccf">
+        <div class="card-content">
+          <h3>Durag</h3>
+          <div class="price">Ksh. 700</div>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- SWEATERS -->
+  <section id="sweaters">
+    <h2>SWEATERS</h2>
+
+    <div class="products">
+
+      <div class="card">
+        <img src="https://images.unsplash.com/photo-1521572267360-ee0c2909d518">
+        <div class="card-content">
+          <h3>Wool Sweater</h3>
+          <div class="price">Ksh. 2,500</div>
+        </div>
+      </div>
+
+      <div class="card">
+        <img src="https://images.unsplash.com/photo-1483985988355-763728e1935b">
+        <div class="card-content">
+          <h3>Nike Sweater</h3>
+          <div class="price">Ksh. 3,500</div>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- JACKETS -->
+  <section id="jackets">
+    <h2>JACKETS</h2>
+
+    <div class="products">
+
+      <div class="card">
+        <img src="https://images.unsplash.com/photo-1523398002811-999ca8dec234">
+        <div class="card-content">
+          <h3>Leather Jacket</h3>
+          <div class="price">Ksh. 4,500</div>
+        </div>
+      </div>
+
+      <div class="card">
+        <img src="https://images.unsplash.com/photo-1515886657613-9f3515b0c78f">
+        <div class="card-content">
+          <h3>North Face Puffer</h3>
+          <div class="price">Ksh. 7,500</div>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- JEWELLERY -->
+  <section id="jewellery">
+    <h2>JEWELLERY & WATCHES</h2>
+
+    <div class="products">
+
+      <div class="card">
+        <img src="https://images.unsplash.com/photo-1523170335258-f5ed11844a49">
+        <div class="card-content">
+          <h3>Richard Mille Watch</h3>
+          <div class="price">Ksh. 350,000</div>
+        </div>
+      </div>
+
+      <div class="card">
+        <img src="https://images.unsplash.com/photo-1547996160-81dfa63595aa">
+        <div class="card-content">
+          <h3>Patek Philippe</h3>
+          <div class="price">Ksh. 500,000</div>
+        </div>
+      </div>
+
+      <div class="card">
+        <img src="https://images.unsplash.com/photo-1617038220319-276d3cfab638">
+        <div class="card-content">
+          <h3>Chrome Hearts Chain</h3>
+          <div class="price">Ksh. 25,000</div>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <footer>
+    <h3>chiefKfits</h3>
+    <p><strong>Owner:</strong> B.O.C.K</p>
+    <p><strong>Location:</strong> Nakuru, Kabarak</p>
+    <p><strong>Email:</strong> okemboi05@gmail.com</p>
+    <p><strong>Phone:</strong> 0779798055</p>
+    <p>© 2026 chiefKfits. All rights reserved.</p>
+  </footer>
+
+</body>
+  </html>
